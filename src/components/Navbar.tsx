@@ -96,8 +96,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className={`hidden lg:flex items-center gap-3 backdrop-blur-md px-3 py-3 rounded-full border transition-colors ${isScrolled ? 'bg-gray-100/50 border-gray-200' : 'bg-black/20 border-white/10'}`}>
-          {links.map((link) => (
+        <div className={`hidden lg:flex items-center gap-3 backdrop-blur-md px-3 py-3 rounded-full border transition-colors ${isScrolled ? 'bg-gray-100/50 border-gray-200' : 'bg-black/20 border-white/10'}`}>\n          {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
@@ -113,8 +112,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex-1 flex items-center justify-end gap-4 shrink-0">
-          <div className={`text-2xl md:text-3xl font-bold tracking-tight z-50 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-            רן שוורץ מתווך נדל"ן
+          <div className={`text-2xl md:text-3xl font-bold tracking-tight z-50 ${isScrolled ? 'text-gray-900' : 'text-white'}`}>\n            רן שוורץ
           </div>
         </div>
       </motion.nav>
@@ -136,8 +134,7 @@ export default function Navbar() {
               className="absolute top-4 left-4 right-4 bg-white rounded-3xl p-6 shadow-2xl flex flex-col"
             >
               <div className="flex justify-between items-center mb-8">
-                <div className="text-2xl font-bold text-gray-900 tracking-tight">
-                  רן שוורץ מתווך נדל"ן
+                <div className="text-2xl font-bold text-gray-900 tracking-tight">\n                  רן שוורץ
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -148,8 +145,7 @@ export default function Navbar() {
                 </button>
               </div>
 
-              <div className="flex flex-col gap-2">
-                {links.map((link) => (
+              <div className="flex flex-col gap-2">\n                {links.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
@@ -178,4 +174,3 @@ export default function Navbar() {
     </>
   );
 }
-
